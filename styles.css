@@ -1,8 +1,27 @@
-header{
-    text-align: center;
-    background-color: blanchedalmond;
+main{
+    background-color:rgb(26, 56, 110);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
-footer{
-    text-align: right;
-    background-color: bisque;
+
+#header{
+    background-color:rgb(48, 194, 194);
+    width: 100vw;
+    height: 46px;
+    display: flex;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 24px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    padding-left: 9px;
+}
+
+.nav-bar{
+
 }
