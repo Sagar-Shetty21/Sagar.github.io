@@ -1,12 +1,15 @@
 main{
     background-color:rgb(16, 23, 34);
     width: 100%;
-    height: 100%;
+    height: auto;
     position: absolute;
     top: 0px;
     left: 0px;
 }
 
+
+
+/*Header section with header title and navigation bar*/
 #header{
     width: 100%;
     height: 8%;
@@ -64,5 +67,25 @@ a:hover {
     to {
       text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
+  }
+
+
+  /* introduction section of portfolio*/
+
+.intro-section{
+  width: auto;
+  height: 94%;
+  margin-top: 9%;
+  text-align: left;
+  margin-left: 12%;
+}
+
+
+  .intro p{
+    font-size: 145px;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    color: rgb(166, 242, 133)
   }
 
