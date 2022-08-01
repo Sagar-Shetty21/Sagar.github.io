@@ -81,11 +81,74 @@ a:hover {
 }
 
 
-  .intro p{
+.intro p{
     font-size: 145px;
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bolder;
-    color: rgb(166, 242, 133)
-  }
+    color: rgb(166, 242, 133);
+    margin-bottom: 6%;
+}
 
+#changing-text::before{
+  content:"Problem Solver.";
+  color: bisque;
+  animation: textanimation infinite 8s;
+}
+
+@keyframes textanimation {
+  20%{
+    content:"Human...";
+    color: rgb(34, 152, 215);
+  }
+  35%{
+      content: "Programmer.";
+      color:rgb(188, 228, 13);
+  }
+  68%{
+    content:"Web Developer.";
+    color:rgb(63, 129, 129);
+  }
+}
+
+
+
+/* About section */
+.about-section{
+  background-color: rgba(6, 1, 19, 0.5);
+  display: flex;
+}
+
+.about-text{
+    width: 55%;
+    height: auto;
+    margin-left: 85px;
+}
+
+.about-image{
+  margin: 60px;
+}
+
+.my-img img{
+  border-radius: 42%;
+}
+
+.about-heading{
+  font-size: 125px;
+  text-align: left;
+  margin-bottom:30px;
+  color:rgba(65, 67, 92, 0.564)
+}
+
+.about-name{
+  font-size: 65px;
+  color:grey;
+  margin-left: 95px;
+}
+
+.about-summary{
+  font-size:x-large;
+  color: rgba(128, 128, 128, 0.249);
+  margin-left: 95px;
+
+}
