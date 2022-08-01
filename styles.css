@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 main{
     background-color:rgb(16, 23, 34);
     width: 100%;
@@ -50,6 +54,7 @@ main{
     color: greenyellow;
     margin-right: 38px;
     font-weight: bold;
+    transition: all ease-in-out 0.5s;
 }
 
 
@@ -75,7 +80,7 @@ a:hover {
 .intro-section{
   width: auto;
   height: 94%;
-  margin-top: 9%;
+  padding-top: 9%;
   text-align: left;
   margin-left: 12%;
 }
@@ -90,7 +95,7 @@ a:hover {
     margin-bottom: 6%;
 }
 
-#changing-text::before{
+.changing-text::before{
   content:"Problem Solver.";
   color: bisque;
   animation: textanimation infinite 8s;
