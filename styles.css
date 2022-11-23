@@ -1,159 +1,97 @@
+
+:root{
+  --color1 : #151515;
+  --color2 : #222831;
+}
+
+
 html{
   scroll-behavior: smooth;
 }
 
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 main{
-    background-color:rgb(16, 23, 34);
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    background-color:var(--color1);
+    width: 100vw;
+    height: 100vh;
 }
 
 
 
-/*Header section with header title and navigation bar*/
-#header{
-    width: 100%;
-    height: 8%;
-    background-color: rgba(23, 23, 51, 0.216);
-    position: fixed;
-    top:0;
-    display: flex;
-}
+                         /* HEADER SECTION */
 
-#header-title div{
-    font-size: xx-large;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
-    display: block;
-    padding: 12px;
-    padding-left: 70px;
-    margin: 0;
-    color: rgb(214, 230, 191)
-}
 
-#header-title b{
-    color: blueviolet;
+/* "S" Icon styling */
+.main-icon{
+  position: absolute;
+  margin: 15px 35px;;
 }
 
 
-#header-navigation{
-    position: absolute;
-    top:0;
-    right: 0;
-    padding: 17px;
-    margin-right: 65px;
-}
-
-#header-navigation  a{
-    font-size: 22px;
-    font-family: 'Times New Roman', Times, serif;
-    text-decoration: none;
-    color: rgba(140, 47, 180, 0.878);
-    margin-right: 38px;
-    font-weight: bold;
-    transition: all ease-in-out 0.5s;
-}
-
-
-/*Glow effect for anchor tags in navigation bar*/
-a:hover {
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-  }
-
-  @-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-  }
-
-
-  /* introduction section of portfolio*/
-
-.intro-section{
-  width: auto;
-  height: 94%;
-  padding-top: 9%;
-  text-align: left;
-  margin-left: 12%;
-}
-
-
-.intro p{
-    font-size: 145px;
-    margin: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bolder;
-    color: rgb(166, 242, 133);
-    margin-bottom: 6%;
-}
-
-.changing-text::before{
-  content:"Problem Solver.";
-  color: bisque;
-  animation: textanimation infinite 8s;
-}
-
-@keyframes textanimation {
-  20%{
-    content:"Human...";
-    color: rgb(34, 152, 215);
-  }
-  35%{
-      content: "Programmer.";
-      color:rgb(188, 228, 13);
-  }
-  68%{
-    content:"Web Developer.";
-    color:rgb(63, 129, 129);
-  }
+.home-button img{
+  width: 48px;
 }
 
 
 
-/* About section */
-.about-section{
-  background-color: rgba(6, 1, 19, 0.5);
+
+
+
+/* Navigation bar styling */
+.nav-bar{
   display: flex;
+  justify-content: center;
+  background-color: var(--color2);
+  width: 40%;
+  margin:auto;
+  height: auto;
+  align-items: center;
+  opacity: 0.1;
+  border-radius:0 0 120px 120px;
 }
 
-.about-text{
-    width: 55%;
-    height: auto;
-    margin-left: 85px;
+.nav-bar:hover{
+  opacity: 0.9;
+  box-shadow: 0 0 10px 5px #222831;
 }
 
-.about-image{
-  margin: 60px;
+
+.nav-bar a{
+  font-size: 25px;
+  color:#e5ecec;
+  padding: 16px;
+  font-weight: bolder;
 }
 
-.my-img img{
-  border-radius: 42%;
+.nav-bar a:hover{
+  font-size: 45px;
+  color:aquamarine;
 }
 
-.about-heading{
-  font-size: 125px;
-  text-align: left;
-  margin-bottom:30px;
-  color:rgba(65, 67, 92, 0.564)
-}
 
-.about-name{
-  font-size: 65px;
-  color:grey;
-  margin-left: 95px;
-}
 
-.about-summary{
-  font-size:x-large;
-  color: rgba(128, 128, 128, 0.249);
-  margin-left: 95px;
 
+                     /* INTRODUCTION SECTION */
+
+
+
+.header-section{
+  width: 100vw;
+  height: auto;
+}                    
+
+
+.intro{
+    top: 130px;
+    left: 10%;
+    font-size:90px;
+    position: fixed;
+    color:rgba(38, 212, 212, 0.744);
 }
